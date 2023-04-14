@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+    <style>
+      .hm2{
+        width: 1200px;
+        height: 600px;
+
+      }
+      #big-block {
+            width: 600px;
+            height: 300px;
+            position: relative;
+            background-color: #d0baba;
+        }
+        #small-block {
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: 404px;
+            background-color: #f3c48e;
+          }
+        .zagov{
+          font-size: 30px;
+          margin-top: 50px;
+          margin-bottom: 50px;
+
+        }
+    </style>
+  <body>
+  <div class="zagov">
+    1-Задания
+  </div>
+    <form onsubmit="return validateForm()">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required />
+      <br /><br />
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required />
+      <button type="button" onclick="PassToggle()">Показать пароль</button>
+      <br /><br />
+      <label for="confirm_password">Подтвердите пароль:</label>
+      <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+        required/>
+      <button  type="button" onclick="PassTogggle()">Показать пароль</button>
+      <br /><br />
+      <input type="submit" value="Отправить" />
+    </form>
+  <div class="zagov">
+    2-Задания
+  </div>
+    <div class="hm2">
+        <div id="big-block"> </div>
+        <div id="small-block"></div>
+      </div>
+  </body>
+  <script src="app.js"></script>
+</html>
